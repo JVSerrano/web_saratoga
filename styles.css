@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background: black;
+    height: auto;
+}
+
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar_menu{
+    color: white;
+}
+
+.navbar_menu ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar_menu a{
+    color: white;
+    text-decoration: none;
+    margin: 16px;
+    font-size: 18px;
+}
+
+.navbar_highlight{
+color: white;
+}
