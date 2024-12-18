@@ -70,7 +70,7 @@ body {
 }
 
 .container-cards{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #2c2c2cc9;
     padding: 20px;
     border-radius: 10px;
     max-width: 90%;
@@ -79,7 +79,7 @@ body {
 
 h2{
     text-align: center;
-    color: #333;
+    color: rgba(133, 130, 130, 0.89);
     margin-bottom: 20px;
 }
 
@@ -90,6 +90,54 @@ justify-content: center;
 gap: 20px;
 }
 
+.card-concert{
+    background: rgba(133, 130, 130, 0.89);
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0.1);
+    width: 280px;
+}
+
+.card-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-inf{
+    margin: 5px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;   
+}
+
+
+
+.card-inf a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #2C2C2C;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    height: 80px;
+    margin: 16x;
+}
+
+.footer-social-networks{
+    margin-right: 12px;
+}
 
 @media (max-width: 950px) {
     .navbar_menu {
@@ -99,6 +147,7 @@ gap: 20px;
         left: 0;
         width: 100%;
         background-color: black;
+        z-index: 1;
     }
 
     .navbar_menu.active {
@@ -120,5 +169,18 @@ gap: 20px;
 
     .navbar_img img {
         height: 54px;
+    }
+
+    .container-cards{
+        max-width: 95%;
+    }
+
+    footer img{
+        display: none;
+    }
+
+    footer p{
+        font-size: 12px;
+        margin: 14px;
     }
 }
