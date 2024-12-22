@@ -87,7 +87,7 @@ h2{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-gap: 20px;
+gap: 32px;
 }
 
 .card-concert{
@@ -128,6 +128,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #f0ebec;
+    margin-top: auto;
 }
 
 footer img{
@@ -138,6 +140,38 @@ footer img{
 .footer-social-networks{
     margin-right: 12px;
 }
+
+
+/* hiring */
+.hiring-container{
+    background: #d0d0d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.hiring-tittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiring-img{
+    height: 300px;
+    width: 300px;
+    background-image: url('./img/el_clan_de_los_lobos_index.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 150px;
+    
+}
+
+
+
 
 @media (max-width: 950px) {
     .navbar_menu {
@@ -184,3 +218,4 @@ footer img{
         margin: 14px;
     }
 }
+
