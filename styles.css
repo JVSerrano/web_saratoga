@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 .navbar {
@@ -214,7 +215,7 @@ hr{
     transition: max-height 0.5s ease-in-out;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -237,7 +238,7 @@ hr{
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
-    margin-bottom: 18px; /* Espacio entre el botón y el menú */
+    margin-bottom: 18px; 
 }
 
 .hiring-toggle:hover {
@@ -256,6 +257,41 @@ hr{
 .hirin-card p{
     padding-bottom: 12px;
 }
+
+/* Carousel */
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding: 24px;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 90s linear infinite;
+}
+
+.carousel-item {
+    flex: 0 0 25%
+}
+
+.carousel-item img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%); /* Mueve 4 elementos completos */
+    }
+}
+
 
 
 
@@ -332,6 +368,15 @@ hr{
 
     .hirin-card{
         margin-right: auto;
+    }
+
+    .carousel-item img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .carousel {
+        width: 100%;
     }
 }
 
