@@ -6,7 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background: #d0d0d0;
 }
 
 .navbar {
@@ -57,7 +58,7 @@ body {
 
 /* main */
 
-.container-index{
+.container-index {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -70,7 +71,7 @@ body {
     align-items: center;
 }
 
-.container-cards{
+.container-cards {
     background-color: #2c2c2cc9;
     padding: 20px;
     border-radius: 10px;
@@ -78,42 +79,42 @@ body {
     margin: 20px;
 }
 
-.container-cards-tittle{
+.container-cards-tittle {
     text-align: center;
     color: rgba(133, 130, 130, 0.89);
     margin-bottom: 20px;
 }
 
-.container-cards-concerts{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 32px;
+.container-cards-concerts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
 }
 
-.card-concert{
+.card-concert {
     background: rgba(133, 130, 130, 0.89);
     border-radius: 4px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0.1);
     width: 280px;
 }
 
-.card-img img{
+.card-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.card-inf{
+.card-inf {
     margin: 5px;
     color: #333;
     text-align: center;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 
 
-.card-inf a{
+.card-inf a {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 15px;
@@ -123,13 +124,13 @@ gap: 32px;
     text-decoration: none;
 }
 
-.card-inf a:hover{
+.card-inf a:hover {
     background-color: #e0110c;
 }
 
 /* Footer */
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,18 +138,18 @@ footer{
     margin-top: auto;
 }
 
-footer img{
+footer img {
     height: 80px;
     margin: 16x;
 }
 
-.footer-social-networks{
+.footer-social-networks {
     margin-right: 12px;
 }
 
 
 /* hiring */
-.hiring-container{
+.hiring-container {
     background: #d0d0d0;
     display: flex;
     flex-direction: column;
@@ -157,7 +158,7 @@ footer img{
     padding-bottom: 80px;
 }
 
-.hiring-tittle{
+.hiring-tittle {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,24 +167,24 @@ footer img{
     padding-top: 52px;
 }
 
-.hiring-tittle h2{
-    padding-top: 12px ;
+.hiring-tittle h2 {
+    padding-top: 12px;
     text-align: center;
     color: #949497;
     padding-bottom: 32px;
 }
 
-.hiring-img{
+.hiring-img {
     height: 300px;
     width: 300px;
     background-image: url('./img/el_clan_de_los_lobos_index.jpg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 150px;
 }
 
-hr{
+hr {
     margin-top: 12px;
     margin-left: 25%;
     margin-right: 25%;
@@ -191,25 +192,25 @@ hr{
     background: #2C2C2C;
 }
 
-.hiring-body-title{
+.hiring-body-title {
     text-align: center;
     padding-top: 32px;
     color: #e0110c !important;
 }
 
-.hiring-body-description{
+.hiring-body-description {
     text-align: center;
     padding: 18px 120px 0px 120px;
 }
 
-.hiring-body-description p{
+.hiring-body-description p {
     font-size: 22px;
     margin: 18px;
 }
 
 .hiring-menu {
-    max-height: 0; 
-    overflow: hidden; 
+    max-height: 0;
+    overflow: hidden;
     background: #d0d0d0;
     z-index: 1;
     transition: max-height 0.5s ease-in-out;
@@ -220,11 +221,11 @@ hr{
 }
 
 .hiring-menu.active {
-    max-height: 500px; 
-    padding-right: 100px; 
+    max-height: 500px;
+    padding-right: 100px;
 }
 
-.hiring-toggle-container{
+.hiring-toggle-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,26 +239,27 @@ hr{
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
-    margin-bottom: 18px; 
+    margin-bottom: 18px;
 }
 
 .hiring-toggle:hover {
     background-color: #e0110c;
 }
 
-.hirin-card{
+.hirin-card {
     margin: 30px;
 }
 
-.hirin-card h4{
+.hirin-card h4 {
     color: #e0110c;
     padding-bottom: 12px;
 }
 
-.hirin-card p{
+.hirin-card p {
     padding-bottom: 12px;
 }
 
+/* biography */
 /* Carousel */
 
 .carousel {
@@ -287,12 +289,52 @@ hr{
     0% {
         transform: translateX(0);
     }
+
     100% {
-        transform: translateX(-200%); /* Mueve 4 elementos completos */
+        transform: translateX(-200%);
+        /* Mueve 4 elementos completos */
     }
 }
 
+/* -biography- */
 
+.btn-header-bio {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 12px;
+}
+
+.btn-header-bio button {
+    margin: 12px;
+    height: 32px;
+    width: 30%;
+    font-size: medium;
+    cursor: pointer;
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-header-bio button:hover {
+    background: #e0110c;
+}
+
+.main-bio {
+    padding: 2% 5% 3% 5%;
+}
+.div-bio h2{
+margin: 38px 0 32px 0;
+color: #e0110c;
+}
+
+.bio-p p {
+    text-align: justify;
+    padding-bottom: 12px;
+    /* margin: 0 10px; */
+}
 
 
 @media (max-width: 950px) {
@@ -327,46 +369,46 @@ hr{
         height: 54px;
     }
 
-    .container-cards{
+    .container-cards {
         max-width: 95%;
     }
 
-    footer img{
+    footer img {
         display: none;
     }
 
-    footer p{
+    footer p {
         font-size: 12px;
         margin: 14px;
     }
 
-    .hiring-img{
-        order: -1  ;
+    .hiring-img {
+        order: -1;
     }
 
-    .hiring-tittle{
-        text-align: center;   
+    .hiring-tittle {
+        text-align: center;
     }
 
-    .hiring-tittle h1{
+    .hiring-tittle h1 {
         padding-top: 16px;
     }
 
-    hr{
+    hr {
         height: 4px;
         margin-left: 5%;
         margin-right: 5%;
     }
 
-    .hiring-body-description{
+    .hiring-body-description {
         padding: 5%;
     }
 
-    .hiring-body-description p{
+    .hiring-body-description p {
         font-size: 16px;
     }
 
-    .hirin-card{
+    .hirin-card {
         margin-right: auto;
     }
 
@@ -375,8 +417,8 @@ hr{
         height: 100%;
         object-fit: cover;
     }
+
     .carousel {
         width: 100%;
     }
 }
-
