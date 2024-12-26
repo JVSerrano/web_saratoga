@@ -37,3 +37,4 @@ function changeLineup() {
     containerBio.style.display = 'none'
     containerLineup.style.display = 'block'
 }
+
