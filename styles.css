@@ -479,42 +479,43 @@ hr {
 
 /* Contact */
 
-.contact-container{
+.contact-container {
     /* height: 100%; */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.main-contact{
+.main-contact {
     border: 1px solid black;
     border-radius: 5px;
     background-color: #e5e5e6;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 50vh;
+    height: 60vh;
     width: 50vh;
-    /* padding: 10%; */
+   padding-top: 20px;
+   padding-bottom: 20px;
 }
 
-.div-form{
+.div-form {
     display: flex;
     flex-direction: column;
     margin: 0 12% 0 12%;
 }
 
-.div-form input{
-height: 28px;
+.div-form input {
+    height: 28px;
 }
 
-.div-form textarea{
-    max-width: 500px; 
+.div-form textarea {
+    max-width: 500px;
     min-height: 150px;
 }
 
-input.div-form[type='submit']{
+input.div-form[type='submit'] {
     background: #2C2C2C;
     color: white;
     border-style: none;
@@ -522,26 +523,51 @@ input.div-form[type='submit']{
     height: 32px;
 }
 
-input.div-form[type='submit']:hover{
+input.div-form[type='submit']:hover {
     background: #e0110c;
     cursor: pointer;
 }
 
-.check-form{
-display: flex ;
-justify-content: start;
-margin-left: 12%;
+.check-form {
+    display: flex;
+    justify-content: start;
+    margin-left: 12%;
 }
 
-.check-form input{
+.check-form input {
     margin-right: 2%;
 }
 
-.contact-title{
+.contact-title {
     padding-top: 12px;
     text-align: center;
     color: #949497;
     padding-bottom: 32px;
+}
+
+/* modal */
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.829);
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.botonCerrar {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 @media (max-width: 950px) {
@@ -645,16 +671,16 @@ margin-left: 12%;
         flex-direction: column;
     }
 
-    .nav-shop{
+    .nav-shop {
         align-items: center;
     }
 
-    .nav-shop a{
+    .nav-shop a {
         margin: 8px;
         width: 100%;
     }
 
-    .main-shop{
+    .main-shop {
         margin: auto;
     }
 
@@ -662,7 +688,18 @@ margin-left: 12%;
         margin: 6px;
     }
 
-    #tittle-shop h1{
+    #tittle-shop h1 {
         margin: 2%;
     }
+
+
+
+    /* .main-contact {
+        padding: 4% 0;
+        height: 62vh;
+    }
+
+    .div-form {
+        padding: 2% 0;
+    } */
 }
