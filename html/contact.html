@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
-    <title>Document</title>
+    <title>Contáctanos</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                     <li><a href="hiring.html">Contratación e Info Gira</a></li>
                     <li><a href="biography.html">Biografía</a></li>
                     <li><a href="shop.html">Tienda</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="">Contacto</a></li>
                 </ul>
             </div>
             <div class="hamburger-menu">
@@ -30,27 +30,31 @@
             </div>
         </nav>
     </header>
-    <div id="tittle-shop">
-        <h1 >Tiendas Oficiales</h1>
-    </div>
-    <main class="main-shop">
-        <div class="main-shop-container">
-            <div class="nav-shop">
-                <a href="https://www.lawebdehabitus.com/saratoga/581-musica">Música</a>
-                <a href="https://www.lawebdehabitus.com/saratoga/582-ropa">Ropa</a>
-                <a href="https://www.lawebdehabitus.com/saratoga/583-complementos">Complementos</a>
-            </div>
-            <div class="img-shop">
-                <img src="../img/img-shop.jpg" alt="img-shop">
-                <div class="shop-btn">
-                    <a href="">Merchand Oficial</a>
-                    <a href="">Tienda</a>
+    <h1 class="contact-title">Contacto</h1>
+    <div class="contact-container">
+
+        <main >
+            <form class="main-contact">
+                <div class="div-form">
+                    <label for="name">Nombre</label>
+                    <input type="text" required>
                 </div>
-            </div>
-        </div>
-
-
-    </main>
+                <div class="div-form">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" required></textarea>
+                </div>
+                <div class="div-form">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" required>
+                </div>
+                <div class="check-form ">
+                    <input type="checkbox" name="check">
+                    <label for="check">Acepto el procesamiento de datos</label>
+                </div>
+                <input class="div-form" type="submit" value="Enviar">
+            </form>
+        </main>
+    </div>
 
     <footer>
         <img src="../img/aie.png" alt="contratacion">
@@ -102,7 +106,7 @@
                 </svg></a>
         </div>
     </footer>
-    <script src="../script.js" defer></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
